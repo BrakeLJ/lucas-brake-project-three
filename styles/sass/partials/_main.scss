@@ -5,12 +5,13 @@
     align-items: center;
 }
 
-h2 {
+h1 {
     writing-mode: vertical-lr;
     font-family: 'Megrim', cursive;
-    font-size: 16rem;
+    font-size: 12rem;
+    text-transform: uppercase;
     position: absolute;
-    right: -175px;
+    right: -130px;
     color: #7B0828;  
 }
 
@@ -52,12 +53,13 @@ h2 {
         display: flex;
         align-items: center;
         position: relative; 
+        
     }
 
     &__song-name {
         font-family: $screen-font;
         position: absolute;
-        right: 20px;
+        right: 213px;
         font-size: 3rem;
     }
 
@@ -67,14 +69,24 @@ h2 {
         border-radius: 1rem;
         background: #777DA7;
         box-shadow: -2px 5px #FE5F55;
-        transition: all .1s;
+        transition: all .05s;
         color: #DBF9F0;
 
         &:active {
             transform: translate(-2px, 5px);
             box-shadow: none;
         }
+    }
 
+    &__btn--js-press {
+        animation: btn-press .1s ;
+    }
+}
+
+@keyframes btn-press {
+    50% {
+        transform: translate(-2px, 5px);
+        box-shadow: none;
     }
 }
 
