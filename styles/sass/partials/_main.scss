@@ -19,18 +19,19 @@ h1 {
 .mixer {
     background: #000000;  //fallback
     background: linear-gradient(to top, #434343, #222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     // background: #885053;
 
     //Grid contaier for buttons
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
     gap: 10px;
     grid-column: 4 / 7;
     grid-row: 1 / 4;
     position: relative;
-    width: clamp(300px, 70%, 600px);
-    height: 800px;
+    width: clamp(320px, 70%, 600px);
+    height: clamp(500px, 80vh, 750px);
     padding: 20px;
     margin: 50px 0 100px 0;
     border: 1px solid black;
@@ -44,9 +45,9 @@ h1 {
         box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
         overflow: hidden;
         width: 80%;
-        height: 80%;
+        padding: 30px;
         grid-row: 1 / 2;
-        grid-column: 1 / 5;
+        grid-column: 2 / 5;
         border: 1px solid black;
         border-radius: .5rem;
         place-self: center;
@@ -54,6 +55,14 @@ h1 {
         align-items: center;
         position: relative; 
         
+    }
+
+    &__switch {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
     }
 
     &__song-name {
