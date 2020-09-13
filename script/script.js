@@ -51,6 +51,7 @@ app.init = () => {
                 <audio data-key="67" src="./assets/audio/tears/Drum Samples/ClosedHH HipHop A 2.wav"></audio>
                 <audio data-key="86" src="./assets/audio/tears/Wu Tan Stab.wav  "></audio>`
             );
+            $('.mixer__song-name').html(`After Laughter - Wendy Rene`);
         } else {
             //changes to 6am sample
             app.sampleChoice = '6am'
@@ -72,6 +73,7 @@ app.init = () => {
                 <audio data-key="67" src="./assets/audio/6am/chorus7.wav"></audio>
                 <audio data-key="86" src="./assets/audio/6am/chorus8.wav"></audio>`
             );
+            $('.mixer__song-name').html(`6am - Fits and the Tantrums`);
         };
     })
 }

@@ -1,8 +1,13 @@
+main {
+    background: linear-gradient(to top, #C4E0E5, #4CA1AF);
+}
+
 .main__flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 h1 {
@@ -12,40 +17,39 @@ h1 {
     text-transform: uppercase;
     position: absolute;
     right: -130px;
-    color: #7B0828;  
+    color: $header-color;  
 }
 
 //Mixer block
 .mixer {
-    background: #000000;  //fallback
-    background: linear-gradient(to top, #434343, #222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    // background: #885053;
+    background: linear-gradient(to top, #243B55, #141E30); 
+
 
     //Grid contaier for buttons
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
     grid-column: 4 / 7;
     grid-row: 1 / 4;
     position: relative;
     width: clamp(320px, 70%, 600px);
     height: clamp(500px, 80vh, 750px);
-    padding: 20px;
-    margin: 50px 0 100px 0;
+    padding: 25px 30px;
+    margin: 75px 0 50px 0;
     border: 1px solid black;
     border-radius: .5rem;
-    box-shadow: -5px 5px #000;
     
 
     //Mixer screen
     &__screen {
-        background: #ABFF00;
+        background: #BAFF29;
         box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+        color: $btn-color;
         overflow: hidden;
         width: 80%;
         padding: 30px;
+        margin-bottom: 50px;
         grid-row: 1 / 2;
         grid-column: 2 / 5;
         border: 1px solid black;
@@ -54,32 +58,44 @@ h1 {
         display: flex;
         align-items: center;
         position: relative; 
-        
     }
 
+    &__song-name {
+        font-family: $screen-font;
+        position: absolute;
+        font-size: 2rem;
+    }
+
+    //Mixer buttons
     &__switch {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
         border-radius: 50%;
         height: 75px;
         width: 75px;
-    }
-
-    &__song-name {
-        font-family: $screen-font;
-        position: absolute;
-        right: 213px;
-        font-size: 3rem;
-    }
-
-    //Mixer buttons
-    &__btn {
-        border: 1px solid #fff;
-        border-radius: 1rem;
-        background: #777DA7;
-        box-shadow: -2px 5px #FE5F55;
+        border: 1px solid $highlight;
+        background:$btn-color;
+        box-shadow: -1px 3px $btn-shadow;
         transition: all .05s;
-        color: #DBF9F0;
+        color: $highlight;
+        font-family: $screen-font;
+        font-weight: bold;
+
+        &:active {
+            transform: translate(-2px, 5px);
+            box-shadow: none;
+        }
+    }
+
+    &__btn {
+        border: 1px solid $highlight;
+        border-radius: 1rem;
+        background:$btn-color;
+        box-shadow: -2px 5px $btn-shadow;
+        transition: all .05s;
+        color: $highlight;
+        font-family: $screen-font;
+        font-weight: bold;
 
         &:active {
             transform: translate(-2px, 5px);
@@ -99,11 +115,17 @@ h1 {
     }
 }
 
+.instructions {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
 //footer block
 .footer {
-    background: cadetblue;
+    background: $btn-color;
     border-top: 1px solid black;
-    padding: 10px 0;
+    padding-top: 10px 0;
+    color: $btn-shadow;
 
     //Flex container
     &__flex {
@@ -120,6 +142,7 @@ h1 {
     &__links {
         padding: 10px;
         font-size: 2.4rem;
+        color: $btn-shadow;
     }
 }
 

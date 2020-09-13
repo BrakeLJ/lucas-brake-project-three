@@ -1,5 +1,8 @@
 //Colour variables
-
+$btn-color: #1B4965;
+$btn-shadow: #FFCF00;
+$highlight: #E8F1F2;
+$header-color: #F61067 ;
 
 // Font variables 
 $screen-font: 'Turret Road', cursive;
@@ -9,3 +12,8 @@ $screen-font: 'Turret Road', cursive;
 @import "partials/setup";
 @import "partials/general";
 @import "partials/main";
+
+// $btn-color: #1A1B41;
+// $btn-shadow: #D64933;
+// $highlight: #EAF9D9;
+// $header-color: #679436 ;
