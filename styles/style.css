@@ -267,7 +267,8 @@ a {
   color: #FFCF00;
 }
 
-main {
+/***************Main Block******************/
+.main {
   background: -webkit-gradient(linear, left bottom, left top, from(#C4E0E5), to(#4CA1AF));
   background: linear-gradient(to top, #C4E0E5, #4CA1AF);
 }
@@ -288,21 +289,21 @@ main {
           align-items: center;
 }
 
-h1 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  font-family: 'Megrim', cursive;
-  font-size: 12rem;
-  text-transform: uppercase;
+.main__header {
   position: absolute;
   right: -130px;
   color: #F61067;
+  font-family: "Megrim", cursive;
+  font-size: 12rem;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
 }
 
+/**************Mixer block***************/
 .mixer {
-  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
-  background: linear-gradient(to top, #243B55, #141E30);
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -316,46 +317,62 @@ h1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
-  position: relative;
+  border: 1px solid #333;
+  border-radius: .5rem;
   width: clamp(320px, 70%, 600px);
   height: clamp(500px, 80vh, 750px);
   padding: 25px 30px;
   margin: 75px 0 50px 0;
-  border: 1px solid black;
-  border-radius: .5rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
+  background: linear-gradient(to top, #243B55, #141E30);
 }
 
 .mixer__screen {
-  background: #BAFF29;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
-  color: #1B4965;
-  overflow: hidden;
-  width: 80%;
-  padding: 30px;
-  margin-bottom: 50px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / 5;
-  border: 1px solid black;
-  border-radius: .5rem;
-  place-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  border: 1px solid black;
+  border-radius: .5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: #BAFF29;
+  color: #1B4965;
 }
 
 .mixer__song-name {
   font-family: "Turret Road", cursive;
-  position: absolute;
   font-size: 2rem;
+}
+
+.mixer__btn-general {
+  border: 1px solid #E8F1F2;
+  border-radius: 1rem;
+  -webkit-box-shadow: -2px 5px #FFCF00;
+          box-shadow: -2px 5px #FFCF00;
+  background: #1B4965;
+  color: #E8F1F2;
+  font-family: "Turret Road", cursive;
+  font-weight: bold;
+  -webkit-transition: all .05s;
+  transition: all .05s;
+}
+
+.mixer__btn-general:active {
+  -webkit-transform: translate(-2px, 5px);
+          transform: translate(-2px, 5px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .mixer__switch {
@@ -366,44 +383,10 @@ h1 {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
-  border: 1px solid #E8F1F2;
-  background: #1B4965;
   -webkit-box-shadow: -1px 3px #FFCF00;
           box-shadow: -1px 3px #FFCF00;
-  -webkit-transition: all .05s;
-  transition: all .05s;
-  color: #E8F1F2;
-  font-family: "Turret Road", cursive;
-  font-weight: bold;
-}
-
-.mixer__switch:active {
-  -webkit-transform: translate(-2px, 5px);
-          transform: translate(-2px, 5px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.mixer__btn {
-  border: 1px solid #E8F1F2;
-  border-radius: 1rem;
-  background: #1B4965;
-  -webkit-box-shadow: -2px 5px #FFCF00;
-          box-shadow: -2px 5px #FFCF00;
-  -webkit-transition: all .05s;
-  transition: all .05s;
-  color: #E8F1F2;
-  font-family: "Turret Road", cursive;
-  font-weight: bold;
-}
-
-.mixer__btn:active {
-  -webkit-transform: translate(-2px, 5px);
-          transform: translate(-2px, 5px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  height: 75px;
+  width: 75px;
 }
 
 .mixer__btn--js-press {
@@ -430,14 +413,14 @@ h1 {
 }
 
 .instructions {
-  width: 60%;
+  width: clamp(320px, 70%, 600px);
   margin-bottom: 50px;
 }
 
 .footer {
-  background: #1B4965;
   border-top: 1px solid black;
   padding-top: 10px 0;
+  background: #1B4965;
   color: #FFCF00;
 }
 
@@ -461,6 +444,16 @@ h1 {
 
 .footer__links {
   padding: 10px;
-  font-size: 2.4rem;
   color: #FFCF00;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 769px) {
+  .main__header {
+    top: -70px;
+    width: clamp(320px, 70%, 600px);
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
 }

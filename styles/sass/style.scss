@@ -6,14 +6,12 @@ $header-color: #F61067 ;
 
 // Font variables 
 $screen-font: 'Turret Road', cursive;
+$header-font: 'Megrim', cursive;
 
 //Partials
 
 @import "partials/setup";
 @import "partials/general";
 @import "partials/main";
+@import "partials/media-queries";
 
-// $btn-color: #1A1B41;
-// $btn-shadow: #D64933;
-// $highlight: #EAF9D9;
-// $header-color: #679436 ;
