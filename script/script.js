@@ -34,22 +34,22 @@ app.init = () => {
         if (app.sampleChoice === '6am') {
             app.sampleChoice = 'tears'
             $('.audio-files').html(`
-                <audio data-key="49" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse1.wav"></audio>
-                <audio data-key="50" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse2.wav"></audio>
-                <audio data-key="51" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse3.wav"></audio>
-                <audio data-key="52" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse4.wav"></audio>
-                <audio data-key="81" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse5.wav"></audio>
-                <audio data-key="87" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse6.wav"></audio>
-                <audio data-key="69" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse7.wav"></audio>
-                <audio data-key="82" src="./assets/audio/tears/1_4 Note Chops/After Laughter Verse8.wav"></audio>
-                <audio data-key="65" src="./assets/audio/tears/Whole Bar Chops/After Laughter Chorus Bar 1.wav"></audio>
-                <audio data-key="83" src="./assets/audio/tears/Whole Bar Chops/After Laughter Chorus Bar 2.wav"></audio>
-                <audio data-key="68" src="./assets/audio/tears/Whole Bar Chops/After Laughter Chorus Bar 3.wav"></audio>
-                <audio data-key="70" src="./assets/audio/tears/Whole Bar Chops/After Laughter Chorus Bar 4.wav"></audio>
-                <audio data-key="90" src="./assets/audio/tears/Drum Samples/Kick Gold 13.wav"></audio>
-                <audio data-key="88" src="./assets/audio/tears/Drum Samples/Snare RnB A 1.wav"></audio>
-                <audio data-key="67" src="./assets/audio/tears/Drum Samples/ClosedHH HipHop A 2.wav"></audio>
-                <audio data-key="86" src="./assets/audio/tears/Wu Tan Stab.wav  "></audio>`
+                <audio data-key="49" src="./assets/audio/tears/quarter-note-chops/verse1.wav"></audio>
+                <audio data-key="50" src="./assets/audio/tears/quarter-note-chops/verse2.wav"></audio>
+                <audio data-key="51" src="./assets/audio/tears/quarter-note-chops/verse3.wav"></audio>
+                <audio data-key="52" src="./assets/audio/tears/quarter-note-chops/verse4.wav"></audio>
+                <audio data-key="81" src="./assets/audio/tears/quarter-note-chops/verse5.wav"></audio>
+                <audio data-key="87" src="./assets/audio/tears/quarter-note-chops/verse6.wav"></audio>
+                <audio data-key="69" src="./assets/audio/tears/quarter-note-chops/verse7.wav"></audio>
+                <audio data-key="82" src="./assets/audio/tears/quarter-note-chops/verse8.wav"></audio>
+                <audio data-key="65" src="./assets/audio/tears/whole-bar-chops/chorus1.wav"></audio>
+                <audio data-key="83" src="./assets/audio/tears/whole-bar-chops/chorus2.wav"></audio>
+                <audio data-key="68" src="./assets/audio/tears/whole-bar-chops/chorus3.wav"></audio>
+                <audio data-key="70" src="./assets/audio/tears/whole-bar-chops/chorus4.wav"></audio>
+                <audio data-key="90" src="./assets/audio/tears/drum-samples/kick-gold13.wav"></audio>
+                <audio data-key="88" src="./assets/audio/tears/drum-samples/snare-rnb.wav"></audio>
+                <audio data-key="67" src="./assets/audio/tears/drum-samples/closed-hh-hiphop.wav"></audio>
+                <audio data-key="86" src="./assets/audio/tears/wutang.wav"></audio>`
             );
             $('.mixer__song-name').html(`After Laughter - Wendy Rene`);
         } else {

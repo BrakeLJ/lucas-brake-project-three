@@ -1,7 +1,12 @@
 @media (max-width:769px) {
-    .main__header {
-        top: -70px;
-        width: clamp(320px, 70%, 600px);
-        writing-mode: horizontal-tb;
-    }
+    .main {
+        &__header--desktop {
+            display: none;
+        }
+
+        &__header--mobile {
+            display: block;
+        }
+    }   
+
 }
