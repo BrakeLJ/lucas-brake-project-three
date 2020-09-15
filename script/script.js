@@ -82,11 +82,3 @@ app.init = () => {
 $(function(){
     app.init();
 });
-
-
-//assign button a variable called wu tang. if button ===wutang then on click change variable to fitz and 
-
-// < !--Audio files-- >
-                
-
-                

@@ -235,7 +235,7 @@ html {
   overflow: hidden;
 }
 
-body, p, h1, h2, ul, span, h3 {
+body, p, h1, h2, ul, span {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -255,12 +255,6 @@ body {
   width: 85%;
   max-width: 1250px;
   margin: 0 auto;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 a {
@@ -331,6 +325,8 @@ a {
   grid-row: 1 / 4;
   border: 1px solid #333;
   border-radius: .5rem;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
   width: clamp(320px, 80%, 600px);
   height: clamp(500px, 80vh, 750px);
   padding: 25px 30px;
@@ -379,9 +375,8 @@ a {
 .mixer__btn-general:active {
   -webkit-transform: translate(-2px, 5px);
           transform: translate(-2px, 5px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #ffcf00;
+  -webkit-box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
+          box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
 }
 
 .mixer__switch {
@@ -392,8 +387,8 @@ a {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   border-radius: 10%;
-  -webkit-box-shadow: -1px 3px #ffcf00;
-          box-shadow: -1px 3px #ffcf00;
+  -webkit-box-shadow: -1px 3px #f61067;
+          box-shadow: -1px 3px #f61067;
 }
 
 .mixer__btn--js-press {
@@ -402,22 +397,20 @@ a {
 }
 
 @-webkit-keyframes btn-press {
-  50% {
+  100% {
     -webkit-transform: translate(-2px, 5px);
             transform: translate(-2px, 5px);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: #ffcf00;
+    -webkit-box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
+            box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
   }
 }
 
 @keyframes btn-press {
-  50% {
+  100% {
     -webkit-transform: translate(-2px, 5px);
             transform: translate(-2px, 5px);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: #ffcf00;
+    -webkit-box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
+            box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
   }
 }
 

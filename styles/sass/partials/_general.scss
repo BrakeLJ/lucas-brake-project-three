@@ -1,4 +1,4 @@
-body,p,h1,h2,ul,span,h3 {
+body,p,h1,h2,ul,span {
      margin: 0;
      padding: 0;
      list-style: none;
@@ -19,12 +19,6 @@ body {
      width: 85%;
      max-width: 1250px;
      margin: 0 auto;
-}
-
-img {
-     width: 100%;
-     height: auto;
-     display: block;
 }
 
 a {

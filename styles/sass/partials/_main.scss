@@ -6,6 +6,8 @@
 // Text
 // Other
 
+//BEM naming convention used for classes
+//BLOCK__ELEMENT--MODIFIER
 /***************Main Block******************/
 .main {
     background: linear-gradient(to top, #C4E0E5, #4CA1AF);
@@ -23,11 +25,6 @@
         font-family: $header-font;
         font-size: clamp(10rem, 8.75vw, 12rem);
         text-transform: uppercase;
-        // text-shadow: 4px 3px 0px $btn-shadow, 9px 8px 0px #11F520;
-        // text-shadow: 0px 3px 0px #b2a98f,
-        //             0px 14px 10px rgba(0,0,0,0.15),
-        //             0px 24px 2px rgba(0,0,0,0.1),
-        //             0px 34px 30px rgba(0,0,0,0.1);
         text-shadow: 0px 5px 10px rgba(246, 16, 103,0.7),
                     1px 3px 5px rgba(250, 176, 204, 0.9)
     }
@@ -60,6 +57,7 @@
     
     border: 1px solid #333;
     border-radius: .5rem;
+    box-shadow: 0 8px 6px -6px black;
     width: clamp(320px, 80%, 600px);
     height: clamp(500px, 80vh, 750px);
     padding: 25px 30px;
@@ -103,8 +101,8 @@
 
         &:active {
             transform: translate(-2px, 5px);
-            box-shadow: none;
-            color: $btn-shadow;
+            box-shadow: 0px 0px 50px $header-color,
+                        0px 0px 25px #5BC0EB;
         }
     }
 
@@ -114,7 +112,7 @@
         grid-column: 1 / 2;
 
         border-radius: 10%;
-        box-shadow: -1px 3px $btn-shadow;
+        box-shadow: -1px 3px $header-color; 
     }
 
     //Targeted by JS for keydown animation
@@ -125,10 +123,10 @@
 
 //Animation keyframes for JS targeted class
 @keyframes btn-press {
-    50% {
+    100% {
         transform: translate(-2px, 5px);
-        box-shadow: none;
-        color: $btn-shadow;
+        box-shadow: 0px 0px 50px $header-color,
+                    0px 0px 25px #5BC0EB;
     }
 }
 
