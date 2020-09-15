@@ -265,7 +265,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #FFCF00;
+  color: #ffcf00;
 }
 
 /***************Main Block******************/
@@ -291,10 +291,11 @@ a {
 }
 
 .main__header {
-  color: #F61067;
+  color: #f61067;
   font-family: "Megrim", cursive;
   font-size: clamp(10rem, 8.75vw, 12rem);
   text-transform: uppercase;
+  text-shadow: 0px 5px 10px rgba(246, 16, 103, 0.7), 1px 3px 5px rgba(250, 176, 204, 0.9);
 }
 
 .main__header--desktop {
@@ -330,7 +331,7 @@ a {
   grid-row: 1 / 4;
   border: 1px solid #333;
   border-radius: .5rem;
-  width: clamp(320px, 70%, 600px);
+  width: clamp(320px, 80%, 600px);
   height: clamp(500px, 80vh, 750px);
   padding: 25px 30px;
   margin: 75px 0 50px 0;
@@ -365,8 +366,8 @@ a {
 .mixer__btn-general {
   border: 1px solid #E8F1F2;
   border-radius: 1rem;
-  -webkit-box-shadow: -2px 5px #FFCF00;
-          box-shadow: -2px 5px #FFCF00;
+  -webkit-box-shadow: -2px 5px #ffcf00;
+          box-shadow: -2px 5px #ffcf00;
   background: #1B4965;
   color: #E8F1F2;
   font-family: "Turret Road", cursive;
@@ -380,7 +381,7 @@ a {
           transform: translate(-2px, 5px);
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #FFCF00;
+  color: #ffcf00;
 }
 
 .mixer__switch {
@@ -391,8 +392,8 @@ a {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   border-radius: 10%;
-  -webkit-box-shadow: -1px 3px #FFCF00;
-          box-shadow: -1px 3px #FFCF00;
+  -webkit-box-shadow: -1px 3px #ffcf00;
+          box-shadow: -1px 3px #ffcf00;
 }
 
 .mixer__btn--js-press {
@@ -406,7 +407,7 @@ a {
             transform: translate(-2px, 5px);
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #FFCF00;
+    color: #ffcf00;
   }
 }
 
@@ -416,7 +417,7 @@ a {
             transform: translate(-2px, 5px);
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #FFCF00;
+    color: #ffcf00;
   }
 }
 
@@ -429,8 +430,9 @@ a {
 .footer {
   border-top: 1px solid black;
   padding-top: 10px 0;
+  height: 6vh;
   background: #1B4965;
-  color: #FFCF00;
+  color: #ffcf00;
 }
 
 .footer__flex {
@@ -453,7 +455,7 @@ a {
 
 .footer__links {
   padding: 10px;
-  color: #FFCF00;
+  color: #ffcf00;
   font-size: 2.4rem;
 }
 
@@ -463,5 +465,17 @@ a {
   }
   .main__header--mobile {
     display: block;
+  }
+  .mixer {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .mixer {
+    width: 100vw;
+  }
+  .mixer__btn-num {
+    display: none;
   }
 }

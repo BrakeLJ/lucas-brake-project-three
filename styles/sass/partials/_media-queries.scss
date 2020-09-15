@@ -9,4 +9,17 @@
         }
     }   
 
+    .mixer {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:500px) {
+    .mixer {
+        width: 100vw;
+
+        &__btn-num {
+            display: none;
+        }
+    }
 }
