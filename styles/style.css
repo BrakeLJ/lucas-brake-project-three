@@ -262,6 +262,10 @@ a {
   color: #ffcf00;
 }
 
+.span-break {
+  display: block;
+}
+
 /***************Main Block******************/
 .main {
   background: -webkit-gradient(linear, left bottom, left top, from(#C4E0E5), to(#4CA1AF));

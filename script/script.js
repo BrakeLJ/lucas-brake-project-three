@@ -1,3 +1,5 @@
+//Logic for connecting keys to keyboard inspired by Wes Bos
+
 //Namespace
 const app = {};
 
