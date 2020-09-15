@@ -105,6 +105,10 @@
             box-shadow: 0px 0px 50px $header-color,
                         0px 0px 25px #5BC0EB;
         }
+
+        &:focus {
+            border: 2px solid $header-color;
+        }
     }
 
     //Switch button styles

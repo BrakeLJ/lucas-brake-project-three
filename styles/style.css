@@ -383,6 +383,10 @@ a {
           box-shadow: 0px 0px 50px #f61067, 0px 0px 25px #5BC0EB;
 }
 
+.mixer__btn-general:focus {
+  border: 2px solid #f61067;
+}
+
 .mixer__switch {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
