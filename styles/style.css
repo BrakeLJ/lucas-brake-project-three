@@ -249,6 +249,7 @@ body {
   font-family: "Palanquin", sans-serif;
   font-size: clamp(1.6rem, 1.35vw, 2rem);
   line-height: 1.4;
+  color: #fff;
 }
 
 .wrapper {
@@ -268,8 +269,7 @@ a {
 
 /***************Main Block******************/
 .main {
-  background: -webkit-gradient(linear, left bottom, left top, from(#C4E0E5), to(#4CA1AF));
-  background: linear-gradient(to top, #C4E0E5, #4CA1AF);
+  background: url(../assets/headphones.jpg) no-repeat center/cover;
 }
 
 .main__flex {
@@ -327,16 +327,15 @@ a {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
-  border: 1px solid #333;
+  border: 2px solid #222;
   border-radius: .5rem;
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
   width: clamp(320px, 80%, 600px);
   height: clamp(500px, 80vh, 750px);
-  padding: 25px 30px;
+  padding: 75px 40px 50px 40px;
   margin: 75px 0 50px 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#243B55), to(#141E30));
-  background: linear-gradient(to top, #243B55, #141E30);
+  background: #141E30;
 }
 
 .mixer__screen {
